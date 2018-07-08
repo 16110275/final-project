@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Cart Page</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+  </head>
+  <body>
+    
+    <div class="container">
+            <div class="row">
+                <div class="col-sm-16">
+                    <div class="keranjang">
+                        <a href="cart.html">keranjang - <span class="total-keranjang">100</span> <i class="fa fa-shopping-cart"></i> <span class="isi-keranjang">5</span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <div class="menu-bar">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                     <li class="active"><a href="index.html">Halaman Utama</a></li>
+                    <li><a href="shop.html">Produk</a></li>
+                    <li><a href="single-product.html">Detail Produk</a></li>
+                    <li><a href="cart.html">Keranjang</a></li>
+                    <li><a href="checkout.html">Priksa</a></li>
+                    <li><a href="#">katagori</a></li>
+                    <li><a href="#">kontak</a></li>
+                </ul>
+            </div>  
+        </div>
+    </div>
+    
+    <div class="area-judul-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="judul-content text-center">
+                        <h2>Shopping Cart</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="area-tengah">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="area-kiri-content">
+                        <h2 class="sidebar-title">Search Produk</h2>
+                        <form action="#">
+                            <input type="text" placeholder="Search products...">
+                            <input type="submit" value="Search">
+                        </form>
+                    </div>
+                    
+                    <div class="area-kiri-content">
+                        <h2 class="sidebar-title">Products</h2>
+                        <div class="produk-diskon">
+                            <img src="img/sepatu2.jpg" class="recent-thumb" alt="">
+                            <h2><a href="single-product.html">sepatu adios - 2015</a></h2>
+                            <div class="product-sidebar-price">
+                                <ins>$700.00</ins> <del>$800.00</del>
+                            </div>                             
+                        </div>
+                        <div class="produk-diskon">
+                            <img src="img/tas3.jpg" class="recent-thumb" alt="">
+                            <h2><a href="single-product.html">Tas Ransel 3 - 2015</a></h2>
+                            <div class="product-sidebar-price">
+                                <ins>$700.00</ins> <del>$800.00</del>
+                            </div>                             
+                        </div>
+                        <div class="produk-diskon">
+                            <img src="img/sepatu4.jpg" class="recent-thumb" alt="">
+                            <h2><a href="single-product.html">Sepatu H - 2015</a></h2>
+                            <div class="product-sidebar-price">
+                                <ins>$700.00</ins> <del>$800.00</del>
+                            </div>                             
+                        </div>
+                        <div class="produk-diskon">
+                            <img src="img/baju3.jpg" class="recent-thumb" alt="">
+                            <h2><a href="single-product.html">Baju M3 - 2015</a></h2>
+                            <div class="product-sidebar-price">
+                                <ins>$700.00</ins> <del>$800.00</del>
+                            </div>                             
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-8">
+                    <div class="product-content-right">
+                        <div class="woocommerce">
+                            <form method="post" action="#">
+                                <table cellspacing="0" class="shop_table cart">
+                                    <thead>
+                                        <tr>
+                                            <th class="product-remove">&nbsp;</th>
+                                            <th class="product-thumbnail">&nbsp;</th>
+                                            <th class="product-name">Produk</th>
+                                            <th class="product-price">harga</th>
+                                            <th class="product-quantity">kuantitas</th>
+                                            <th class="product-subtotal">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="cart_item">
+                                            <td class="product-remove">
+                                                <a title="Remove this item" class="remove" href="#">×</a> 
+                                            </td>
+
+                                            <td class="product-thumbnail">
+                                                <a href="single-product.html"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="img/tas1.jpg"></a>
+                                            </td>
+
+                                            <td class="product-name">
+                                                <a href="single-product.html">Tas 1</a> 
+                                            </td>
+
+                                            <td class="product-price">
+                                                <span class="amount">£15.00</span> 
+                                            </td>
+
+                                            <td class="product-quantity">
+                                                <div class="quantity buttons_added">
+                                                    <input type="button" class="minus" value="-">
+                                                    <input type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
+                                                    <input type="button" class="plus" value="+">
+                                                </div>
+                                            </td>
+
+                                            <td class="product-subtotal">
+                                                <span class="amount">£15.00</span> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="actions" colspan="6">
+                                                <div class="coupon">
+                                                    <label for="coupon_code">Coupon:</label>
+                                                    <input type="text" placeholder="Coupon code" value="" id="coupon_code" class="input-text" name="coupon_code">
+                                                    <input type="submit" value="Apply Coupon" name="apply_coupon" class="button">
+                                                </div>
+                                                <input type="submit" value="Update Cart" name="update_cart" class="button">
+                                                <input type="submit" value="Checkout" name="proceed" class="checkout-button button alt wc-forward">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+
+                            <div class="area-diskon-cart">
+                            <div class="diskon-cart">
+                                <h2>anda mungkin tertarik..</h2>
+                                <ul class="products">
+                                    <li class="product">
+                                        <a href="single-product.html">
+                                            <img width="325" height="325" alt="T_4_front" class="attachment-shop_catalog wp-post-image" src="img/b2.jpg">
+                                            <h3>Baju Wanita</h3>
+                                            <span class="price"><span class="amount">£20.00</span></span>
+                                        </a>
+
+                                        <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="22" rel="nofollow" href="single-product.html">Select</a>
+                                    </li>
+
+                                    <li class="product">
+                                        <a href="single-product.html">
+                                            <img width="325" height="325" alt="T_4_front" class="attachment-shop_catalog wp-post-image" src="img/celana3.jpg">
+                                            <h3>Celana Pria</h3>
+                                            <span class="price"><span class="amount">£20.00</span></span>
+                                        </a>
+
+                                        <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="22" rel="nofollow" href="single-product.html">Select</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tabel-total">
+                                <h2>Totals</h2>
+
+                                <table cellspacing="0">
+                                    <tbody>
+                                        <tr class="cart-subtotal">
+                                            <th>Cart Subtotal</th>
+                                            <td><span class="amount">£15.00</span></td>
+                                        </tr>
+
+                                        <tr class="shipping">
+                                            <th>Shipping and Handling</th>
+                                            <td>Free Shipping</td>
+                                        </tr>
+
+                                        <tr class="order-total">
+                                            <th>Order Total</th>
+                                            <td><strong><span class="amount">£15.00</span></strong> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <form method="post" action="#" class="shipping_calculator">
+                                <h2><a class="shipping-calculator-button" data-toggle="collapse" href="#calcalute-shipping-wrap" aria-expanded="false" aria-controls="calcalute-shipping-wrap">Calculate Shipping</a></h2>
+                                <section id="calcalute-shipping-wrap" class="shipping-calculator-form collapse">
+                                <p class="form-row form-row-wide">
+                                <select rel="calc_shipping_state" class="country_to_state" id="calc_shipping_country" name="calc_shipping_country">
+                                    <option value="">Select a country…</option>
+                                    <option value="AX">Åland Islands</option>
+                                    <option value="AF">Afghanistan</option>
+                                    <option value="AL">Albania</option>
+                                    <option value="DZ">Algeria</option>
+                                    <option value="AD">Andorra</option>
+                                    <option value="AO">Angola</option>
+                                    <option value="AI">Anguilla</option>
+                                    <option value="AQ">Antarctica</option>
+                                    <option value="AG">Antigua and Barbuda</option>
+                                    <option value="AR">Argentina</option>
+                                </select>
+                                </p>
+
+                                <p class="form-row form-row-wide"><input type="text" id="calc_shipping_state" name="calc_shipping_state" placeholder="State / county" value="" class="input-text"> </p>
+                                <p class="form-row form-row-wide"><input type="text" id="calc_shipping_postcode" name="calc_shipping_postcode" placeholder="Postcode / Zip" value="" class="input-text"></p>
+                                <p><button class="button" value="1" name="calc_shipping" type="submit">Update Totals</button></p>
+                                </section>
+                            </form>
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-about-us">
+                        <h2>WEB<span>Shop</span></h2>
+                        <p>terimakasih telah mengunjungi web site kami. dan trimakasih telah berpartisipasi didalam website ini karena tanpa kalian ini semua tidak ada gunanya</p>
+                        <div class="footer-social">
+                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="judul-footer">Navigasi pengguna </h2>                        
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="judul-footer">katagori</h2>
+                        <ul>
+                            <li><a href="#">telepon genggam</a></li>
+                            <li><a href="#">LED TV</a></li>
+                            <li><a href="#">komputer</a></li>
+                        </ul>                        
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-newsletter">
+                        <h2 class="judul-footer">Berita</h2>
+                        <p>Daftar ke buletin kami dan dapatkan penawaran eksklusif yang tidak akan Anda temukan di tempat lain langsung ke kotak masuk Anda!</p>
+                        <div class="newsletter-form">
+                            <form action="#">
+                                <input type="email" placeholder="Type your email">
+                                <input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
